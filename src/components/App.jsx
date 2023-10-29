@@ -4,6 +4,7 @@ import ImageGallery from './ImageGallery/ImageGallery';
 import Button from './Button/Button';
 import Loader from './Loader/Loader';
 import Modal from './Modal/Modal';
+import ButtonModal from './Loader/ButtonModal';
 
 // 1. СВГ не показуєтсья
 // 2. прокручування не працює
@@ -103,7 +104,7 @@ export class App extends Component {
     return (
       <>
         <Searchbar onSubmit={this.getSearchName} />
-        {isLoading && <Loader />}
+        {isLoading && <ButtonModal />}
         {images.length !== 0 && (
           <>
             <ImageGallery images={images} onImageClick={this.onImageClick} />

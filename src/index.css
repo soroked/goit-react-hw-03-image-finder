@@ -184,6 +184,13 @@ img {
 /*
 * Стили компонента Buton (Load more)
 */
+
+.BtnContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .Button {
   padding: 8px 16px;
   border-radius: 2px;
